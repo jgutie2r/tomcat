@@ -1,5 +1,19 @@
 ## Welcome to Apache Tomcat!
 
+### What Provides This Fork?
+
+This fork provides two branches that can be merged to the main branch:
+ - cloudevents: adds support for cloud events
+ - filters: adds three filters and an utility class to add them programmatically
+
+After cloning the project these branches can be merged independently with the
+main branch according to the needs:
+`git pull origin cloudevents`
+`git pull origin filters`
+
+With the support for cloud events it is easy to develop event-driven server
+functions. The functions have been tested on Knative.
+
 ### What Is It?
 
 The Apache Tomcat® software is an open source implementation of the Java
