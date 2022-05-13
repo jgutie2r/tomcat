@@ -219,6 +219,8 @@ public abstract class CloudEventListener extends GenericServlet {
                         resp.addHeader("Content-Length", "" + body.length);
                         resp.setStatus(HttpServletResponse.SC_OK);
                         outputStream.write(body);
+                        outputStream.flush();
+                        outputStream.close();                        
                      }
                   } else {
                      resp.setStatus(HttpServletResponse.SC_NO_CONTENT);
