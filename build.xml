@@ -342,6 +342,7 @@
     <include name="jakarta/servlet/annotation/**" />
     <include name="jakarta/servlet/descriptor/**" />
     <include name="jakarta/servlet/http/**" />
+     <include name="jakarta/servlet/events/**" />
     <include name="jakarta/servlet/resources/**" />
     <exclude name="jakarta/servlet/jsp"/>
   </patternset>
@@ -449,10 +450,14 @@
     <include name="jakarta/servlet/**" />
     <include name="jakarta/servlet/annotation/**" />
     <include name="jakarta/servlet/http/**" />
+    
     <exclude name="jakarta/servlet/descriptor/**" />
     <exclude name="jakarta/servlet/jsp/**"/>
     <exclude name="jakarta/servlet/resources/**" />
 
+    <!-- CloudEvents -->
+    <include name="jakarta/servlet/events/**" />
+    
     <!-- AprLifecycleListener is configured by default -->
     <include name="**/AprLifecycleListener.*"/>
     <include name="**/AprStatus.*"/>
