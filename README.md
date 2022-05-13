@@ -8,8 +8,9 @@ This fork provides two branches that can be merged to the main branch:
 
 After cloning the project these branches can be merged independently with the
 main branch according to the needs:
-`git pull origin cloudevents`
-`git pull origin filters`
+
+ - `git pull origin cloudevents`
+ - `git pull origin filters`
 
 With the support for cloud events it is easy to develop event-driven server
 functions. The functions have been tested on Knative.
